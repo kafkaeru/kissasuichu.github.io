@@ -1,0 +1,459 @@
+html,
+body {
+	font-family: "メイリオ", "Verdana", "Roboto", "Droid Sans", "游ゴシック", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "MS Pゴシック", sans-serif;
+	background-color: #fff;
+	display: flex;
+	flex-flow: column;
+	min-height: 100vh;
+	margin: 0;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.header {
+	background-color: #bbc4dc;
+	height: 10%;
+}
+
+.header-logo {
+	font-size: 30px;
+	color: rgb(255, 255, 255);
+	height: 50px;
+	margin: 2% 5% 2% 5%;
+	padding-left: 1%;
+	float: left;
+	width: 90%;
+}
+
+.header-list a {
+	text-decoration: none;
+	float: left;
+	margin: 0 5% 3% 5%;
+	color: rgb(134, 187, 169);
+	font-size: 20px;
+	text-align: center;
+	padding: 1%;
+}
+
+.header-list a:hover {
+	background-color: #fff;
+	border-radius: 10%;
+}
+
+.main {
+	background-color: #fff;
+	flex: 1;
+}
+
+/*dropmenu style*/
+/*style of the main menu*/
+#dropmenu {
+	margin-top: 10%;
+	margin-left: 18%;
+}
+
+#dropmenu li {
+	position: relative;
+	float: left;
+	text-align: center;
+	width: 30%;
+}
+
+#dropmenu li a {
+	display: block;
+	padding: 15px 0px 11px 10px;
+	margin: 0px;
+	background: #bbd4dc;
+	color: #fff;
+	font-size: 18px;
+	line-height: 1;
+	text-decoration: none;
+	border-radius: 10px;
+}
+
+/*style of the sub menu*/
+#dropmenu li ul {
+	top: 100%;
+	left: 0;
+	margin: 0;
+	padding: 0;
+}
+
+#dropmenu li ul li {
+	overflow: hidden;
+	width: 100%;
+	height: 0;
+	color: #fff;
+	transition: .3s;
+}
+
+#dropmenu li ul li a {
+	padding: 13px 15px;
+	background: #bbd4dc;
+	text-align: center;
+	font-size: 12px;
+	font-weight: normal;
+}
+
+/*action against touching the main menu*/
+#dropmenu li:hover a {
+	background: #bbd4dc;
+	color: #ffffff;
+	border-bottom: 1px solid #ffffff;
+}
+
+/*only li of main menu should change the color by ">" (not li of sub menu) */
+#dropmenu li:hover>a {
+	background-color: #91d3e5;
+}
+
+/*action against touching the sub menu*/
+#dropmenu li ul li:hover a {
+	background-color: #91d3e5;
+}
+
+#dropmenu li:hover ul li {
+	overflow: visible;
+	height: 38px;
+	border-top: 1px solid #ffffff;
+}
+
+#dropmenu li:hover ul li:first-child {
+	border-top: 0;
+}
+
+#dropmenu li:hover ul li:last-child {
+	border-bottom: 0;
+}
+
+#dropmenu li:hover ul li:last-child a {
+	border-radius: 10px;
+}
+
+/*nikki style*/
+.nikki-logo {
+	font-size: 27px;
+	margin-left: 20%;
+	margin-top: 5%;
+}
+
+.nikki {
+	font-size: 15px;
+	margin-left: 20%;
+	margin-right: 10%;
+	line-height: 50px;
+}
+
+.nikki a {
+	color: rgb(97, 165, 142);
+	border-radius: 3px;
+}
+
+.nikki a:hover {
+	background-color: rgb(207, 171, 192);
+}
+
+.nikki img {
+	width: 50%;
+}
+
+.hidden {
+	display: none;
+}
+
+.hidden-main input {
+	display: none;
+}
+
+.hidden-main label {
+	cursor: pointer;
+	color: rgb(97, 165, 142);
+}
+
+.hidden-main label:hover {
+	background-color: rgb(207, 171, 192);
+}
+
+.hidden-main input:checked~.hidden {
+	display: inline;
+
+}
+
+#MovePage a {
+	background-color: rgb(134, 187, 169);
+	padding: 1%;
+	font-size: 17px;
+	color: #fff;
+}
+
+#MovePage a:hover {
+	background-color: rgb(100, 187, 169);
+}
+
+.MovePrePage a {
+	float: left;
+	margin-left: 5%;
+	margin-top: 5%;
+	border-radius: 50px 3px 3px 50px;
+}
+
+.MoveNexPage a {
+	float: right;
+	margin-right: 5%;
+	margin-top: 5%;
+	background-color: rgb(134, 187, 169);
+	border-radius: 3px 50px 50px 3px;
+}
+
+.fMovePrePage a {
+	float: left;
+	margin-left: 5%;
+	background-color: rgb(134, 187, 169);
+	border-radius: 50px 3px 3px 50px;
+}
+
+.fMoveNexPage a {
+	float: right;
+	margin-right: 5%;
+	padding: 1%;
+	background-color: rgb(134, 187, 169);
+	border-radius: 3px 50px 50px 3px;
+}
+
+/* hitikotoba style */
+.hitokotoba a {
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	font-size: 10px;
+	margin-right: 5%;
+	float: right;
+	margin-top: 3%;
+	padding: 1%;
+	width: 50px;
+	border-radius: 50%;
+	height: 50px;
+	line-height: 5;
+	color: #fff;
+	background-color: #79c4b4;
+}
+
+.hitokotoba a:hover {
+	background-color: #58d3b8;
+}
+
+.hitokotoba-logo {
+	font-size: 27px;
+	margin-left: 40%;
+	margin-top: 10%;
+}
+
+#hitokotoba {
+	font-size: 15px;
+	margin-left: 40%;
+	margin-right: 10%;
+	line-height: 300px;
+}
+
+/* monogatari style */
+.monogatari a {
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	font-size: 17px;
+	margin: auto;
+	margin-top: 30%;
+	padding: 1%;
+	width: 30%;
+	line-height: 1.8;
+	color: #fff;
+	background-color: #e79ad0;
+	border-radius: 10px;
+}
+
+.monogatari a:hover {
+	background-color: #ee88cf;
+}
+
+.monogatari-logo {
+	display: block;
+	margin: auto;
+	margin-top: 2%;
+	text-decoration: none;
+	text-align: center;
+	font-size: 30px;
+	padding: 1%;
+	max-width: 50%;
+	line-height: 1.8;
+	color: rgb(0, 0, 0);
+	background-color: #ffffff;
+	border-left: #e79ad0 solid 10px;
+	border-right: #e79ad0 solid 10px;
+	border-radius: 200px;
+}
+
+.monogatari-title a {
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	font-size: 17px;
+	margin: auto;
+	margin-top: 10%;
+	padding: 1%;
+	max-width: 80%;
+	line-height: 1.8;
+	color: rgb(82, 82, 82);
+	background-color: #ffffff;
+	border-left: #e79ad0 solid 5px;
+	border-right: #e79ad0 solid 5px;
+	border-radius: 200px;
+}
+
+.monogatari-title a:hover {
+	background-color: #e79ed1;
+}
+
+/* fadeout when hovering nikki */
+#dropmenu:hover+#others a {
+	background: #fff;
+	transition: 0.3s;
+}
+
+/*footer-style*/
+.footer {
+	margin-top: 5%;
+	margin-bottom: 3%;
+}
+
+/*mobile devive style*/
+/*phone*/
+@media screen and (max-width:420px) {
+	.nikki-logo {
+		font-size: 27px;
+		margin-left: 6%!important;
+		margin-top: 5%;
+	}
+
+	.nikki {
+		font-size: 14px;
+		margin-left: 5%!important;
+		margin-right: 5%!important;
+		line-height: 50px;
+	}
+
+	.nikki img {
+		width: 100%;
+	}
+
+	#MovePage a {
+		font-size: 20px;
+		width: 35%;
+		padding: 3%;
+		margin-bottom: 5%;
+		text-align: center;
+	}
+
+	.header {
+		height: 10%;
+	}
+
+	.header-list a {
+		font-size: 25px;
+	}
+
+	#dropmenu {
+		margin-top: 10%;
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+
+	#dropmenu li {
+		width: 25%;
+	}
+
+	#dropmenu li a {
+		font-size: 20px;
+	}
+
+	/*style of the sub menu*/
+	#dropmenu li ul li a {
+		padding: 13px 15px;
+		font-size: 15px;
+	}
+
+	/*action against touching the sub menu*/
+
+	#dropmenu li:hover ul li {
+		height: 41px;
+	}
+
+	/* monogatari style*/
+	.monogatari a {
+		margin-top: 40%;
+		font-size: 25px;
+	}
+
+	.monogatari-logo {
+		display: block;
+		margin: auto;
+		margin-top: 5%;
+		padding: 1%;
+	}
+
+	/* monogatari01 style */
+	.monogatari01 a {
+		font-size: 16px;
+	}
+
+	.hitokotoba-logo {
+		font-size: 27px;
+		margin-left: 30%;
+		margin-top: 10%;
+	}
+	
+	/* hitokotoba style */
+	#hitokotoba {
+		font-size: 15px;
+		margin-left: 30%;
+		margin-right: 10%;
+		line-height: 300px;
+	}
+}
+
+/*pad*/
+@media screen and (max-width:1000px) {
+	.nikki-logo {
+		margin-left: 17%;
+	}
+
+	.nikki {
+		margin-left: 17%;
+		margin-right: 15%;
+	}
+
+	/* monogatari style*/
+	.monogatari-logo {
+		margin: auto;
+		margin-top: 5%;
+		padding: 1%;
+		width: 50%;
+	}
+
+	/* monogatari01 style */
+	.monogatari01 a {
+		margin-top: 10%;
+		padding: 1%;
+		margin-left: 30%;
+		width: 40%;
+	}
+
+	#dropmenu {
+		margin-top: 15%;
+	}
+}
